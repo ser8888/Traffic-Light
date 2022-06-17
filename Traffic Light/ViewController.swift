@@ -32,11 +32,12 @@ class ViewController: UIViewController {
 }
     
     @IBAction func buttonMainPressed() {
+        buttonMain.configuration = setupButtonMainPressed(with: "N E X T")
         switch index {
         case 0 :
+            lightGreenLabel.alpha = 0.3
             lightRedLabel.alpha = 1
             index += 1
-            buttonMain.configuration = setupButtonMainPressed(with: "N E X T")
         case 1 :
             lightRedLabel.alpha = 0.3
             lightYellowLabel.alpha = 1
@@ -44,10 +45,6 @@ class ViewController: UIViewController {
         case 2 :
             lightYellowLabel.alpha = 0.3
             lightGreenLabel.alpha = 1
-            index += 1
-        case 3:
-            lightGreenLabel.alpha = 0.3
-            buttonMain.configuration = setupButtonMainPressed(with: "S T A R T")
             index = 0
         default :
             return
