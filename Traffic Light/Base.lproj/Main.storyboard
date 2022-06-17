@@ -40,6 +40,12 @@
                                     <constraint firstAttribute="width" constant="100" id="fke-kb-33J"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f44-JR-PmL">
+                                <rect key="frame" x="129" y="701" width="156" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="S T A R T"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
@@ -48,9 +54,12 @@
                             <constraint firstItem="uBy-9F-OqS" firstAttribute="top" secondItem="BPm-ad-BA9" secondAttribute="bottom" constant="75" id="7CK-Gp-4R0"/>
                             <constraint firstItem="BPm-ad-BA9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="944-3x-R5Q"/>
                             <constraint firstItem="BPm-ad-BA9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="152" id="Bqd-3n-8Id"/>
+                            <constraint firstItem="f44-JR-PmL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pfz-uP-USl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BPm-ad-BA9" secondAttribute="trailing" constant="162" id="Ze5-32-q4V"/>
                             <constraint firstItem="f6v-36-Uun" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="152" id="fOe-J3-YBM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="f44-JR-PmL" secondAttribute="bottom" constant="101" id="lKI-Cm-onW"/>
                             <constraint firstItem="f6v-36-Uun" firstAttribute="top" secondItem="uBy-9F-OqS" secondAttribute="bottom" constant="82" id="tPV-t1-J8W"/>
+                            <constraint firstItem="f44-JR-PmL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tfx-HO-eNZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f6v-36-Uun" secondAttribute="trailing" constant="162" id="z9x-ch-8A7"/>
                         </constraints>
                     </view>
