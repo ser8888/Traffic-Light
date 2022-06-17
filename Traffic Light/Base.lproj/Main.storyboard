@@ -16,16 +16,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f44-JR-PmL">
+                                <rect key="frame" x="129" y="701" width="156" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="S T A R T"/>
+                                <connections>
+                                    <action selector="buttonPress" destination="BYZ-38-t0r" eventType="touchUpInside" id="JQR-La-sQD"/>
+                                </connections>
+                            </button>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BPm-ad-BA9" userLabel="View RED">
-                                <rect key="frame" x="152" y="94" width="100" height="100"/>
+                                <rect key="frame" x="157" y="95" width="100" height="100"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="GXZ-xm-82d"/>
-                                    <constraint firstAttribute="height" constant="100" id="gzZ-fh-Dpd"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="bp2-lK-UmU"/>
+                                    <constraint firstAttribute="height" constant="100" id="xii-Jr-g7F"/>
                                 </constraints>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uBy-9F-OqS" userLabel="View Yellow">
-                                <rect key="frame" x="152" y="269" width="100" height="100"/>
+                                <rect key="frame" x="157" y="270" width="100" height="100"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="62o-xG-zPV"/>
@@ -33,36 +42,36 @@
                                 </constraints>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f6v-36-Uun" userLabel="View Green">
-                                <rect key="frame" x="152" y="451" width="100" height="100"/>
+                                <rect key="frame" x="157" y="452" width="100" height="100"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="Te2-4y-hHC"/>
                                     <constraint firstAttribute="width" constant="100" id="fke-kb-33J"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f44-JR-PmL">
-                                <rect key="frame" x="129" y="701" width="156" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="S T A R T"/>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
-                            <constraint firstItem="uBy-9F-OqS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="152" id="5uj-qg-Mue"/>
-                            <constraint firstItem="uBy-9F-OqS" firstAttribute="top" secondItem="BPm-ad-BA9" secondAttribute="bottom" constant="75" id="7CK-Gp-4R0"/>
-                            <constraint firstItem="BPm-ad-BA9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="944-3x-R5Q"/>
-                            <constraint firstItem="BPm-ad-BA9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="152" id="Bqd-3n-8Id"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BPm-ad-BA9" secondAttribute="trailing" constant="157" id="4M8-cX-bbk"/>
+                            <constraint firstItem="f6v-36-Uun" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="157" id="7rP-2T-VJD"/>
                             <constraint firstItem="f44-JR-PmL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pfz-uP-USl"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BPm-ad-BA9" secondAttribute="trailing" constant="162" id="Ze5-32-q4V"/>
-                            <constraint firstItem="f6v-36-Uun" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="152" id="fOe-J3-YBM"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="f44-JR-PmL" secondAttribute="bottom" constant="101" id="lKI-Cm-onW"/>
-                            <constraint firstItem="f6v-36-Uun" firstAttribute="top" secondItem="uBy-9F-OqS" secondAttribute="bottom" constant="82" id="tPV-t1-J8W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uBy-9F-OqS" secondAttribute="trailing" constant="157" id="UNo-ma-iSs"/>
+                            <constraint firstItem="uBy-9F-OqS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="157" id="Uad-Ov-iFD"/>
+                            <constraint firstItem="BPm-ad-BA9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="51" id="Vgs-SQ-ILL"/>
+                            <constraint firstItem="BPm-ad-BA9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="157" id="ijr-pr-3Ud"/>
+                            <constraint firstItem="uBy-9F-OqS" firstAttribute="top" secondItem="BPm-ad-BA9" secondAttribute="bottom" constant="75" id="lRV-XF-fEu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f6v-36-Uun" secondAttribute="trailing" constant="157" id="n0h-9F-LcL"/>
+                            <constraint firstItem="f44-JR-PmL" firstAttribute="top" secondItem="f6v-36-Uun" secondAttribute="bottom" constant="149" id="oXW-ru-B1n"/>
+                            <constraint firstItem="f6v-36-Uun" firstAttribute="top" secondItem="uBy-9F-OqS" secondAttribute="bottom" constant="82" id="tEC-cC-gyl"/>
                             <constraint firstItem="f44-JR-PmL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tfx-HO-eNZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f6v-36-Uun" secondAttribute="trailing" constant="162" id="z9x-ch-8A7"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lightGreen" destination="f6v-36-Uun" id="k6J-sg-AHQ"/>
+                        <outlet property="lightRed" destination="BPm-ad-BA9" id="BcQ-v1-oog"/>
+                        <outlet property="lightYellow" destination="uBy-9F-OqS" id="zjX-lx-oHW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
