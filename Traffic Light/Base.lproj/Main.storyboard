@@ -12,12 +12,12 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Traffic_Light" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BPm-ad-BA9">
-                                <rect key="frame" x="132" y="145" width="150" height="150"/>
+                            <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BPm-ad-BA9">
+                                <rect key="frame" x="132" y="111" width="150" height="150"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="yUC-f0-KRd"/>
@@ -30,14 +30,35 @@
                                     <constraint firstAttribute="height" constant="200" id="jya-Tm-wkt"/>
                                 </constraints>
                             </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7BK-0a-x39">
+                                <rect key="frame" x="132" y="332" width="150" height="150"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="HkR-em-cXK"/>
+                                    <constraint firstAttribute="height" constant="150" id="Ufy-d2-3RG"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LN0-d1-Apg">
+                                <rect key="frame" x="132" y="552" width="150" height="138"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="3yp-pd-MSn"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="HYZ-V2-wJ5"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7BK-0a-x39" secondAttribute="trailing" constant="132" id="0vg-YO-adY"/>
+                            <constraint firstItem="7BK-0a-x39" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="9Ee-Gm-BHa"/>
                             <constraint firstItem="BPm-ad-BA9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="108" id="NdV-Kf-mdZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BPm-ad-BA9" secondAttribute="bottom" constant="200" id="PVy-Aj-hp6"/>
+                            <constraint firstItem="LN0-d1-Apg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="P1W-lp-Aem"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LN0-d1-Apg" secondAttribute="trailing" constant="132" id="Se8-KX-bhB"/>
+                            <constraint firstItem="LN0-d1-Apg" firstAttribute="firstBaseline" secondItem="7BK-0a-x39" secondAttribute="baseline" constant="8" symbolType="layoutAnchor" id="gKa-rA-BAe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BPm-ad-BA9" secondAttribute="trailing" constant="108" id="mGD-Z7-rhQ"/>
                             <constraint firstItem="BPm-ad-BA9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="rWD-TQ-F4f"/>
+                            <constraint firstItem="7BK-0a-x39" firstAttribute="top" secondItem="BPm-ad-BA9" secondAttribute="bottom" constant="38" id="wst-fD-xLy"/>
                         </constraints>
                     </view>
                 </viewController>
