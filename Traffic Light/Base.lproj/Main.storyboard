@@ -67,9 +67,9 @@
                     </view>
                     <connections>
                         <outlet property="buttonMain" destination="f44-JR-PmL" id="Dma-eg-fUd"/>
-                        <outlet property="lightGreen" destination="f6v-36-Uun" id="k6J-sg-AHQ"/>
-                        <outlet property="lightRed" destination="BPm-ad-BA9" id="BcQ-v1-oog"/>
-                        <outlet property="lightYellow" destination="uBy-9F-OqS" id="zjX-lx-oHW"/>
+                        <outlet property="lightGreenLabel" destination="f6v-36-Uun" id="k6J-sg-AHQ"/>
+                        <outlet property="lightRedLabel" destination="BPm-ad-BA9" id="BcQ-v1-oog"/>
+                        <outlet property="lightYellowLabel" destination="uBy-9F-OqS" id="zjX-lx-oHW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
