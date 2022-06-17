@@ -34,7 +34,6 @@ class ViewController: UIViewController {
     @IBAction func buttonMainPressed() {
         switch index {
         case 0 :
-            lightGreen.alpha = 0.3
             lightRed.alpha = 1
             index += 1
             buttonMain.configuration = setupButtonMainPressed(with: "N E X T")
